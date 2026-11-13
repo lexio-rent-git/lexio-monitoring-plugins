@@ -17,14 +17,14 @@ info = {
         "(https://docs.lexio.rent). Modes: api (reachability, response time), maintenance "
         "(overdue and upcoming services, vehicles blocked for rental), late-returns and missed-pickups. "
         "Installs check_lexio in local/lib/nagios/plugins: create an 'Integrate Nagios plugins' rule with "
-        "$USER2$/check_lexio -k <key file> -m maintenance. Requires a Lexio API key (lck_..., Business plan). "
+        "$USER2$/check_lexio -k KEYFILE -m maintenance. Requires a Lexio API key (lck_..., Business plan). "
         "Read-only, no dependency beyond Python 3."
     ),
     "version": VERSION,
     "version.packaged": "2.3.0",
     "version.min_required": "2.2.0",
     "version.usable_until": None,
-    "author": "Lexio Rent <contact@lexio.rent>",
+    "author": "Lexio Rent (contact@lexio.rent)",
     "download_url": "https://github.com/lexio-rent-git/lexio-monitoring-plugins",
     "files": {"lib": ["nagios/plugins/check_lexio"]},
 }
